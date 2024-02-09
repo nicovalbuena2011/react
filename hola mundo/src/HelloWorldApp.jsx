@@ -1,9 +1,11 @@
+import PropTypes from 'prop-types'
+
 
 const newMessage = '23 años'
 
 const mensaje = () => 'retorno un mensaje'
 
-export const App = ( {title = 'valor predeterminado', subTitle} ) => {
+export const App = ( {title, subTitle} ) => {
 
 
     return (
@@ -13,4 +15,14 @@ export const App = ( {title = 'valor predeterminado', subTitle} ) => {
             <p>Soy un parrafo</p>
         </>
     )
+}
+
+App.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired
+}
+
+App.defaultProps = {
+    title: 'Valor por defecto',
+    subTitle: 'Valor por defecto subtitulo'
 }
