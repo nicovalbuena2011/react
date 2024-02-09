@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types'
+import { useState } from 'react'
 
 export const CounterApp = ({ value }) => {
 
-  const handleClick = (event) => console.log(event)
+  const [count, setcount] = useState(value)
+
+
+  const handleClick = (event) => setcount(count + 1)
 
   return (
     <><h1>CounterApp</h1>
-      <h2> {value} </h2>
+      <h2> {count} </h2>
       <button onClick={handleClick}>
         +1
       </button>
