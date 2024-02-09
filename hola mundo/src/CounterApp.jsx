@@ -6,7 +6,8 @@ export const CounterApp = ({ value }) => {
   const [count, setcount] = useState(value)
 
 
-  const handleClick = (event) => setcount(count + 1)
+  const handleClick = (event) => setcount( count + 1 )
+  // setcount( (c) => c + 1 )
 
   return (
     <><h1>CounterApp</h1>
