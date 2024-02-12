@@ -19,9 +19,6 @@ export const GifGrid = ({categorie}) => {
   return (
     <div>
       <h3>{categorie}</h3>
-
-      
-
       {
         images.map(element =>{
           return(           
@@ -30,7 +27,6 @@ export const GifGrid = ({categorie}) => {
         })
       }
       
-    </div>
-    
+    </div>  
   )
 }

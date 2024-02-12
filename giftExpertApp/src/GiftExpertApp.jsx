@@ -17,16 +17,11 @@ export const GiftExpertApp = () => {
       <h1>GiftExpertApp</h1>
  
       <AddCategory onAddCategory = {onAddCategory} />
-
-
-
         {
           categories.map((categorie)=>(
             <GifGrid categorie = {categorie} key = {categorie}/>
           ))
         }
-    
-
     </>
   )
 }
