@@ -5,10 +5,10 @@ import { UseForm } from '../Hooks/UseForm'
 export const FormWithCustomHook = () => {
 
 
-  const { form, handleForm, username, email, password } = UseForm({
-    username: 'Nicolas',
-    email: 'nicolas@nicolas.com',
-    password: '****'
+  const { form, handleForm, onResetForm, username, email, password } = UseForm({
+    username: '',
+    email: '',
+    password: ''
   }) 
   
 
@@ -40,6 +40,7 @@ export const FormWithCustomHook = () => {
         value={password}
         onChange={handleForm}
       />
+      <button className='btn btn-primary mt-2' onClick={onResetForm}>Reset</button>
 
       {
         (username === 'javier' && <Message/>)

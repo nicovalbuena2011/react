@@ -16,10 +16,13 @@ export const UseForm = ( initial = {}) => {
     })
   }
 
+  const onResetForm = () => setform(initial)
+
   return {
     ...form,
     form,
-    handleForm
+    handleForm,
+    onResetForm
   }
 
 }
