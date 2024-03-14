@@ -60,7 +60,7 @@ export const TodoApp = () => {
       <div className="container mt-4">
         <div className="card">
           <div className="card-body">
-            <h1 className="card-title">TodoApp: {10} <small className="text-muted">Pendientes: {2}</small></h1>
+            <h1 className="card-title">TodoApp: {state.length} <small className="text-muted">Pendientes: {2}</small></h1>
             <hr />
             <div className="row">
               <div className="col-lg-7">
